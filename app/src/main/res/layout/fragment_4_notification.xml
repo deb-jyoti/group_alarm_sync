@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".menufragments.NotificationFragment">
+
+    <TextView
+        android:id="@+id/notifyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:textColor="#35355E"
+        android:text="Notifications" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/notifyTextView"
+        android:background="?android:attr/listDivider"
+        tools:ignore="UnknownId" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notifyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/divider"/>
+
+    <LinearLayout
+        android:id="@+id/defaultNotifyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_notify"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Stay tuned!! we will notify\n you whenever there is an event" />
+
+    </LinearLayout>
+
+</RelativeLayout>

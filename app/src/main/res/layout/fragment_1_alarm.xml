@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".menufragments.AlarmFragment">
+
+    <TextView
+        android:id="@+id/alarmStatus"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/field_design"
+        android:gravity="center"
+        android:text="Alarm in next ... hrs\n... mins"
+        android:textColor="#372525"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/buttonRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmStatus"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/addAlarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_add" />
+
+        <ImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/alarmListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonRelLayout"
+        tools:ignore="InvalidId" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/menuBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRelLayout"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menu_design"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/deleteAlarmsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Delete alarms"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/leaveGroupsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Leave groups"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/aboutAppTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="About app"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/logOutTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Log Out"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

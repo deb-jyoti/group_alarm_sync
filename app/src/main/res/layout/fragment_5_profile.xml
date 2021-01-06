@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/field_design"
+    tools:context=".menufragments.ProfileFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Profile"
+        android:textColor="#363665"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#DCDCDC"
+        app:civ_border_width="1dp" />
+
+    <ImageButton
+        android:id="@+id/choosePicBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@id/infoLayout"
+        android:layout_marginLeft="-50dp"
+        android:layout_toRightOf="@+id/profilePic"
+        android:background="@drawable/menu_design"
+        android:src="@drawable/ic_pic" />
+
+    <ProgressBar
+        android:id="@+id/progressBarImg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profilePic"
+        android:layout_alignBottom="@id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profilePic"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/typing_design"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="#363665"
+                android:textColorHint="@color/purple_200"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/saveNameBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/checkbox_on_background"
+                android:text="save"
+                android:textColor="#7B44FF"
+                android:textSize="12sp"
+                app:backgroundTint="@color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/statusEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/typing_design"
+                android:hint="Status"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="#363665"
+                android:textColorHint="@color/purple_200"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/saveStatusBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/checkbox_on_background"
+                android:text="save"
+                android:textColor="#7B44FF"
+                android:textSize="12sp"
+                app:backgroundTint="@color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/typing_design"
+                android:hint="Email"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="#363665"
+                android:textColorHint="@color/purple_200"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/verifyBtn"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_notverified" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteAccountBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:minHeight="40dp"
+            android:text="Delete\nAccount"
+            android:textSize="12sp"
+            app:backgroundTint="#DC1111" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarProfile"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

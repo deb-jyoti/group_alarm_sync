@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".menufragments.GroupsFragment">
+
+    <LinearLayout
+        android:id="@+id/defaultGroupsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_add_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add/create new groups\n to use the most out of this app"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#35355E"
+        android:text="USER NAME" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/userNameTextView"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/createGroupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/createNewGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_design"
+            android:ems="10"
+            android:hint="Create new group"
+            android:inputType="textPersonName"
+            android:minHeight="40dp"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/createNewGroupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_add" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/groupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createGroupLayout"
+        android:layout_margin="10dp"
+        android:text="Groups"
+        android:textSize="18dp"
+        android:textColor="#35355E"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/groupTextView"
+        tools:ignore="InvalidId" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

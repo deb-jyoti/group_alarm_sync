@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "864079301242",
+    "firebase_url": "https://group-alarm-sync-86a41-default-rtdb.firebaseio.com",
+    "project_id": "group-alarm-sync-86a41",
+    "storage_bucket": "group-alarm-sync-86a41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864079301242:android:1f6a71e96e519fd85749c3",
+        "android_client_info": {
+          "package_name": "com.example.groupalarmsync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864079301242-38b2t8bfuo1i03tfnarcvf3p9gj72dvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu8ttWW3VtKH2Aml2zZSX4sLWVgGeluvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864079301242-38b2t8bfuo1i03tfnarcvf3p9gj72dvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

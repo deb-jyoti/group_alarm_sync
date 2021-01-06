@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".menufragments.SearchFragment">
+
+    <SearchView
+        android:id="@+id/friendSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_design"
+        android:iconifiedByDefault="false"
+        android:inputType="textShortMessage"
+        android:queryHint="Search friends" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/friendSearch"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/recentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:textColor="#35355E"
+        android:textSize="18dp"
+        android:text="Recent" />
+
+    <ListView
+        android:id="@+id/searchHistoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recentTextView"
+        tools:ignore="UnknownId" />
+
+    <LinearLayout
+        android:id="@+id/defaultSearchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_search"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Type in to search\n for friends and add to groups" />
+
+    </LinearLayout>
+</RelativeLayout>
